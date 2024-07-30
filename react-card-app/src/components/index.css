@@ -1,0 +1,50 @@
+
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  .bgcontainer{
+    background-color: aquamarine;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .MarqueeContainer {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: marquee 50s linear infinite;
+  }
+  
+  .MarqueeContainer:hover {
+    animation-play-state: paused;
+  }
+  
+  .ZoomCard {
+    transition: transform 0.3s ease-in-out;
+    margin: 0 10px;
+    display: inline-block;
+    min-width: 300px;
+    text-decoration: none; 
+    
+      
+    
+  }
+  
+  .ZoomCard:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+  
+  .ZoomCard .MuiCard-root {
+    width: 100%; 
+    border-radius:20px ;
+    
+  }
+  
+
